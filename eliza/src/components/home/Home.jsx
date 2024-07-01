@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImg from '../../assets/profile-img.png';
+import profileImg from '../../assets/profile-img.svg'
 import shapeOne from '../../assets/shape-1.png';
 import shapeTwo from '../../assets/shape-2.png';
 
@@ -17,6 +17,12 @@ const Home = () => {
             <p className="home__job">
               <span className="text-cs">I am a</span><b> Web Developer</b>
             </p>
+
+            <div className="home__img-wrapper">
+              <div className="home__banner">
+                <img src={profileImg} alt="" className="home__profile"/>
+              </div>
+            </div>
 
             <p className="home__text">
               From Rio de Janeiro, Brazil. I have rich experience in web development and I'm also good at WordPress. Let's talk!

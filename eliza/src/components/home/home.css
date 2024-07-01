@@ -7,6 +7,7 @@
 
 .home__container{
     width: 100%;
+    position: relative;
 }
 
 .home__subtitle,
@@ -63,4 +64,35 @@
 .home__btns {
     display: flex;
     column-gap: 70px;
+}
+
+.hero__link::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -97%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 2px;
+    background-color: var(--border-color);
+}
+
+.home__img-wrapper{
+    position: absolute;
+    top: 0;
+    right: 12px;
+    width: 100%;
+    max-width: 30rem;
+}
+
+.home__banner {
+    background-color: var(--primary-color);
+    padding-bottom: 100%;
+    border-radius: 50%;
+}
+
+.home__profile {
+    position: absolute;
+    bottom: 0;
+    height: 550px;
 }

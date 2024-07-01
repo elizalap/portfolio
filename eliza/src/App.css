@@ -118,7 +118,7 @@ img {
 
 .container {
   max-width: 1300px;
-  padding-inline: 12px;
+  /* padding-inline: 12px; */
   margin-inline: auto;
 }
 
@@ -164,15 +164,4 @@ img {
   transform: scale(1);
   filter: blur(0); 
   opacity: 1; 
-}
-
-.hero__link::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: -97%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 2px;
-  background-color: var(--border-color);
 }
