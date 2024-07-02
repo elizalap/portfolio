@@ -1,5 +1,9 @@
 .home {
-    /* background-color: var(--first-gradient); */
+    background-color: var(--first-gradient);
+    padding-bottom: 90px;
+}
+
+.home__wrapper {
     min-height: 100vh;
     display: grid;
     align-items: center;

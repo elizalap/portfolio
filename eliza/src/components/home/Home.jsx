@@ -11,7 +11,8 @@ import './home.css';
 const Home = () => {
   return (
     <section className="home" id="home">
-        <div className="home__container container">
+      <div className="home__wrapper">
+      <div className="home__container container">
             <p className="home__subtitle text-css">
                 Hello, <span>I am</span>
             </p>
@@ -58,6 +59,8 @@ const Home = () => {
             <a href="" className="hero__link text-cs">My skills</a>
             </div>
         </div>
+      </div>
+        
     </section>
   )
 };
