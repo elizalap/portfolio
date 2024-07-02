@@ -1,4 +1,6 @@
 import React from 'react';
+
+import workanaIcon from '../../assets/workana-icon.png'
 import profileImg from '../../assets/profile-img.svg'
 import shapeOne from '../../assets/shape-1.png';
 import shapeTwo from '../../assets/shape-2.png';
@@ -25,18 +27,18 @@ const Home = () => {
                 <img src={shapeTwo} alt="" className="shape shape__2" />
                 <img src={shapeTwo} alt="" className="shape shape__3" />
               </div>
-              <p className="home__data home__data-one">
+              {/* <p className="home__data home__data-one">
                 <span className="text-lg">
                   12 <b>+</b>
                 </span>
                 <span className="text-sm text-cs">
                   Years of <span>Experience</span>
                 </span>
-              </p>
+              </p> */}
             </div>
 
             <p className="home__text">
-              From Rio de Janeiro, Brazil. I have rich experience in web development and I'm also good at WordPress. Let's talk!
+              From Rio de Janeiro, Brazil. I have rich experience in web development and I love working with WordPress. Let's talk!
             </p>
 
             <div className="home__socials">
@@ -45,6 +47,9 @@ const Home = () => {
               </a>
               <a href="http://www.github.com/elizalap" target="_blank" className="home__social-link">
                 <FaGithub/>
+              </a>
+              <a href="#" target="_blank" className="home__social-link">
+                <img className="workana-icon" src={workanaIcon}/>
               </a>
             </div>
 

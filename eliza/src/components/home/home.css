@@ -62,6 +62,10 @@
     color: var(--primary-color);
 }
 
+.home__social-link .workana-icon {
+    width: 25px;
+}
+
 .home__btns {
     display: flex;
     column-gap: 70px;
