@@ -1,14 +1,11 @@
-import React from "react";
 import './services.css'
 import { services } from '../../Data'
 import { FaArrowRight } from "react-icons/fa";
+import shapeTwo from '../../assets/shape-2.png';
 
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-// import required modules
 import { Pagination } from 'swiper/modules';
 
 const Services = () => {
@@ -18,7 +15,7 @@ const Services = () => {
                 What I do
             </h2>
             <p className="section__subtitle">
-                My <span>Services</span>
+                My <span className="text-purple-700">Services</span>
             </p>
             <Swiper 
             pagination={{
@@ -43,14 +40,15 @@ const Services = () => {
             >
                 {services.map(({name, title, description}, index) => {
                     return (
-                        <SwiperSlide className="services__item card card-one">
+                        <SwiperSlide className="services__item card card-one" key={index}>
                             <span className="services__subtitle text-cs">{name}</span>
                             <h3 className="services__title">{title}</h3>
                             <p className="services__description">{description}</p>
                             <a href="" className="link">
-                                ...
+                                See details
                                 <FaArrowRight className="link__icon"></FaArrowRight>
                             </a>
+                            <img src={shapeTwo} alt="" className="shape c__shape" />
                         </SwiperSlide>
                     )
                 })}
